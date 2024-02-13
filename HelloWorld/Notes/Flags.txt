@@ -1,0 +1,22 @@
+Flags are like settings you can choose when you run a program from the command line.
+
+Go's flag package helps manage these settings.
+You define what settings your program can have, including default values and descriptions.
+
+You define flags with names, default values, and descriptions.
+Your program reads these settings when it starts using flag.Parse().
+
+flag.Parse() is a function call that tells your program to look at the command-line arguments and extract any flags you've defined.
+Without calling flag.Parse(), your program won't know what flags were provided when it was run.
+
+flag.String():
+This function is used to define a command-line flag that expects a string value.
+It takes three arguments:
+var strFlag = flag.String("flag_name", "default_value", "Description of the flag")
+
+flag.Int():
+
+This function is used to define a command-line flag that expects an integer value.
+It takes the same three arguments as flag.String():
+var intFlag = flag.Int("flag_name", default_value, "Description of the flag")
+

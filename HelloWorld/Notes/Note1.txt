@@ -1,0 +1,1 @@
+defer lis.Close() ensures that the network listener lis will be closed when the main() function exits, preventing any resource leaks and ensuring proper cleanup.
