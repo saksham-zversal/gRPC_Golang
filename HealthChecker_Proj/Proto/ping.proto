@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "/gencode";
+
+// package helloworld;
+
+// The greeting service definition.
+service PingService {
+  rpc HealthCheck (PingRequest) returns (PingReply) {}
+}
+
+message PingRequest {
+
+}
+
+message PingReply {
+  string message = 1;
+}
